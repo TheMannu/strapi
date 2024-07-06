@@ -11,7 +11,7 @@ sudo systemctl enable docker
 sudo usermod -aG docker $USER
 
 # Clone Strapi repository into ubuntu user's home directory
-sudo git clone https://github.com/leticia2983/strapi.git /home/ubuntu/strapi
+sudo git clone https://github.com/TheMannu/strapi.git /home/ubuntu/strapi
 
 # Change ownership and permissions of strapi directory
 sudo chown -R ubuntu:ubuntu /home/ubuntu/strapi

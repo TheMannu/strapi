@@ -1,4 +1,4 @@
-resource "aws_security_group" "strapi-sg-let" {
+resource "aws_security_group" "Ashwan-strapi-sg" {
   vpc_id      = aws_vpc.strapi_vpc.id
   description = "Security group for Strapi Application on Docker"
   ingress {
@@ -30,13 +30,13 @@ resource "aws_security_group" "strapi-sg-let" {
 
 
   tags = {
-    Name = "Ashwani-Strapi-SG"
+    Name = "Ashwan-Strapi-SG"
   }
 
 }
 
-
-resource "aws_instance" "strapi-ec2-let" {
+# EC2 Instance
+resource "aws_instance" "Ashwan-strapi-ec2" {
   ami                         = var.ami
   instance_type               = "t2.small"
   vpc_security_group_ids      = [aws_security_group.strapi-sg-let.id]
@@ -74,7 +74,7 @@ resource "aws_instance" "strapi-ec2-let" {
               EOF
 
   tags = {
-    Name = "Ashwani-Strapi_ec2-let"
+    Name = "Ashwan-Strapi_ec2"
   }
 }
 
