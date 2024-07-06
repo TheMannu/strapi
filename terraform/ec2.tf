@@ -30,7 +30,7 @@ resource "aws_security_group" "strapi-sg-let" {
 
 
   tags = {
-    Name = "Strapi-SG"
+    Name = "Ashwani-Strapi-SG"
   }
 
 }
@@ -67,14 +67,14 @@ resource "aws_instance" "strapi-ec2-let" {
               DATABASE_USERNAME=root
               DATABASE_PASSWORD=password
               EOT
-              git clone https://github.com/leticia2983/strapi.git
+              git clone https://github.com/TheMannu/strapi.git
               cd strapi
               docker-compose up -d
               sleep 10
               EOF
 
   tags = {
-    Name = "Strapi_ec2-let"
+    Name = "Ashwani-Strapi_ec2-let"
   }
 }
 

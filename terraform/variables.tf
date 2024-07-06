@@ -1,5 +1,5 @@
 variable "region" {
-  default = "us-west-1"
+  default = "ap-south-1"
 }
 
 variable "ami" {
@@ -7,5 +7,5 @@ variable "ami" {
 }
 
 variable "keyname" {
-  default = "leticiauswest"
+  default = "Ashwanikey"
 }
