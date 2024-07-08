@@ -22,9 +22,7 @@
     "react-router-dom": "5.3.4",
     "styled-components": "5.3.3"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "author": "A Strapi developer",
   "strapi": {
     "uuid": "52c73072-28d4-4caa-bcea-b951ed324c65"
   },
@@ -32,5 +30,15 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMannu/strapi.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TheMannu/strapi/issues"
+  },
+  "homepage": "https://github.com/TheMannu/strapi#readme"
 }
